@@ -1,13 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Вебстудия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    section>h2+ul>li*4>a>img
-    <h1>My first webpage</h1>
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav">
+          <a class="company-logo" href="">Логотип</a>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/icons/sprite.svg#close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons/sprite.svg#menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            Контент-меню
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" type="button" data-modal-close></button>
+        </div>
+      </div>
+      <section class="section features">
+        <div class="container">
+          <h2 class="section-title">Заголовок первой секции</h2>
+          <ul class="features-set">
+            <li class="features-item">1</li>
+            <li class="features-item">2</li>
+            <li class="features-item">3</li>
+            <li class="features-item">4</li>
+            <li class="features-item">5</li>
+            <li class="features-item">6</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="container">
+          <h2 class="section-title">Заголовок второй секции</h2>
+          <ul class="reviews-set">
+            <li class="reviews-item">1</li>
+            <li class="reviews-item">2</li>
+            <li class="reviews-item">3</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

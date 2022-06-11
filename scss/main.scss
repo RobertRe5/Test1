@@ -1,0 +1,11 @@
+@import "./utils/breakpoints";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+// components
+@import "./components/container";
+@import "./components/page-header";
+@import "./components/company-logo";
+@import "./components/section";
+@import "./components/reviews";
+@import "./components/features";

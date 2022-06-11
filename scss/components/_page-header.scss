@@ -1,0 +1,51 @@
+.page-header {
+  position: relative;
+
+  border-bottom: 2px solid black;
+}
+
+.page-header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 100px;
+
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  &.is-open {
+    display: block;
+  }
+}
+
